@@ -1,0 +1,16 @@
+{
+  "name": "seven-trumpets",
+  "description": "A AWS lambda function to tell the time for cleaning up on the Chatwork",
+  "version": "1.0.0",
+  "dependencies": {
+    "aws-sdk": "^2.7.19",
+    "post-chatwork-message": "^0.1.4"
+  },
+  "keywords": [],
+  "license": "MIT",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "zip": "zip deploy_package index.js -r node_modules"
+  }
+}
