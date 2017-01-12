@@ -16,7 +16,17 @@
 ## refs
 [AWS LambdaからChatworkに定時通知する - Qiita](http://qiita.com/ledsun/items/cc90978d0e09f459d571)を参考にしてください。
 
-圧縮ファイルは`npm run zip`で作成可能です。
+圧縮ファイルは
+
+```
+rm -rf node_modules
+npm i --production
+npm run zip
+```
+
+で作成可能です。
+avaを含めると15MBを超えるので、devDependenciesのmoduleを一度削除します。
+
 
 ## cron expression
 

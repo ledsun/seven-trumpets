@@ -6,11 +6,15 @@
     "aws-sdk": "^2.7.19",
     "post-chatwork-message": "^0.1.4"
   },
+  "devDependencies": {
+    "ava": "^0.17.0"
+  },
   "keywords": [],
   "license": "MIT",
   "main": "index.js",
   "private": true,
   "scripts": {
-    "zip": "zip deploy_package index.js -r node_modules"
+    "test": "ava",
+    "zip": "zip deploy_package index.js -FSr node_modules lib"
   }
 }
