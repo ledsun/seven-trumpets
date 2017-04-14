@@ -4,10 +4,13 @@
   "version": "1.0.0",
   "dependencies": {
     "aws-sdk": "^2.9.0",
-    "post-chatwork-message": "^0.1.4"
+    "post-chatwork-message": "^1.0.0"
   },
   "devDependencies": {
-    "ava": "^0.17.0"
+    "ava": "^0.19.0"
+  },
+  "engines": {
+    "node": ">=6.10"
   },
   "keywords": [],
   "license": "MIT",
