@@ -27,7 +27,8 @@ yarn run zip
 で作成可能です。
 avaを含めると15MBを超えるので、devDependenciesのmoduleを一度削除します。
 
-
 ## cron expression
 
-`0 9 ? * FRI *`
+Run at 17:55(JST) every friday.
+
+`55 8 ? * FRI *`
