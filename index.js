@@ -3,21 +3,16 @@ const postChatworkMessage = require('post-chatwork-message')
 const isTodaySecondFriday = require('./lib/isTodaySecondFriday')
 
 const encryptedToken = process.env.ENCRYPTED_CHATWORK_API_TOKEN
-const message = `MDCにいる方は18時から掃除です。宜しくお願いします。
+const message = `町田本社にいる方は18時から掃除です。宜しくお願いします。
 
 掃除
-- 床を拭く
+- 掃除機をかける
+- クイックルワイパーで床を拭く
 - ゴミを集める
-- トイレ掃除
-  - 次の補充、全て掃除用具箱の中に入っています
-  - トイレットペーパー
-  - 手を拭く紙
-  - 消臭力、消臭スプレー
 - 灰皿を洗う
 - 水とコーヒーの受け皿を洗う
-- ゴミを一階に持っていく
 - 使い終わったカップを元の位置に戻す
-- カフェと会議室の机、棚拭き`
+- 居室と会議室の机、棚拭き`
 
 exports.handler = function(event, context) {
   // 第二金曜日は全社会議に続いて掃除をするので、通知不要
