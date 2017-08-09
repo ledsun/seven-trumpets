@@ -20,8 +20,8 @@
 
 ```
 rm -rf node_modules
-yarn install --production
-yarn run zip
+npm install --only=production --no-save
+npm run zip
 ```
 
 で作成可能です。
