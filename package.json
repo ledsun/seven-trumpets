@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "dependencies": {
     "aws-sdk": "^2.95.0",
+    "japanese-holidays": "^1.0.6",
     "post-chatwork-message": "^1.0.0"
   },
   "devDependencies": {

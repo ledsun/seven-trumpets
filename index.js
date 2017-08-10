@@ -1,5 +1,6 @@
 const AWS = require('aws-sdk')
 const postChatworkMessage = require('post-chatwork-message')
+const japaneseHolidays = require('japanese-holidays')
 const isTodaySecondFriday = require('./lib/isTodaySecondFriday')
 
 const encryptedToken = process.env.ENCRYPTED_CHATWORK_API_TOKEN
@@ -17,6 +18,11 @@ const message = `町田本社にいる方は18時から掃除です。宜しく�
 exports.handler = function(event, context) {
   // 第二金曜日は全社会議に続いて掃除をするので、通知不要
   if(isTodaySecondFriday()){
+    return
+  }
+
+  // 実行日が祝日の時は、通知不要 
+  if(japaneseHolidays.isHoliday(new Date())){
     return
   }
 
