@@ -16,13 +16,15 @@ const message = `町田本社にいる方は18時から掃除です。宜しく�
 - 居室と会議室の机、棚拭き`
 
 exports.handler = function(event, context) {
+  const today = new Date()
+
   // 第二金曜日は全社会議に続いて掃除をするので、通知不要
-  if(isTodaySecondFriday()){
+  if(isTodaySecondFriday(today)){
     return
   }
 
   // 実行日が祝日の時は、通知不要 
-  if(japaneseHolidays.isHoliday(new Date())){
+  if(japaneseHolidays.isHoliday(today)){
     return
   }
 
