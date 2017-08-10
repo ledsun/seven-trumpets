@@ -28,6 +28,13 @@ exports.handler = function(event, context) {
     return
   }
 
+  // 木曜日なら翌日が祝日の時に通知する
+  if(today.getDay() === 4) {
+    if(!japaneseHolidays.isHoliday(new Date(today.getFullYear(), today.getMonth(), today.getDate() + 1))) {
+      return
+    }
+  }
+
   new AWS.KMS({
       region: 'ap-northeast-1'
     })

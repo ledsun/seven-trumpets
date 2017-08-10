@@ -31,7 +31,7 @@ avaを含めると15MBを超えるので、devDependenciesのmoduleを一度削�
 
 Run at 17:55(JST) every friday.
 
-`55 8 ? * FRI *`
+`55 8 ? * THU-FRI *`
 
 # Note
 
