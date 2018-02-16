@@ -7,13 +7,13 @@ const encryptedToken = process.env.ENCRYPTED_CHATWORK_API_TOKEN
 const message = `町田本社にいる方は18時から掃除です。宜しくお願いします。
 
 掃除
-- 掃除機をかける
 - クイックルワイパーで床を拭く
 - ゴミを集める
 - 灰皿を洗う
 - 水とコーヒーの受け皿を洗う
 - 使い終わったカップを元の位置に戻す
-- 居室と会議室の机、棚拭き`
+- 居室と会議室の机、棚拭き
+- 靴箱を泥を拭く`
 
 exports.handler = function(event, context) {
   const today = new Date()
@@ -23,7 +23,7 @@ exports.handler = function(event, context) {
     return
   }
 
-  // 実行日が祝日の時は、通知不要 
+  // 実行日が祝日の時は、通知不要
   if(japaneseHolidays.isHoliday(today)){
     return
   }
