@@ -3,7 +3,7 @@
   "description": "A AWS lambda function to tell the time for cleaning up on the Chatwork",
   "version": "1.0.0",
   "dependencies": {
-    "aws-sdk": "^2.95.0",
+    "aws-sdk": "^2.207.0",
     "get-second-friday": "0.0.1",
     "japanese-holidays": "^1.0.6",
     "post-chatwork-message": "^1.0.0"
