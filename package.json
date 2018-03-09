@@ -4,13 +4,11 @@
   "version": "1.0.0",
   "dependencies": {
     "aws-sdk": "^2.95.0",
+    "get-second-friday": "0.0.1",
     "japanese-holidays": "^1.0.6",
     "post-chatwork-message": "^1.0.0"
   },
-  "devDependencies": {
-    "ava": "^0.21.0",
-    "serverless": "^1.19.0"
-  },
+  "devDependencies": {},
   "engines": {
     "node": ">=6.10"
   },
@@ -19,7 +17,6 @@
   "main": "index.js",
   "private": true,
   "scripts": {
-    "test": "ava",
     "zip": "zip deploy_package index.js -FSr node_modules lib"
   }
 }

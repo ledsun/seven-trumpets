@@ -19,8 +19,6 @@
 圧縮ファイルは
 
 ```
-rm -rf node_modules
-npm install --only=production --no-save
 npm run zip
 ```
 
