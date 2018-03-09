@@ -22,8 +22,7 @@
 npm run zip
 ```
 
-で作成可能です。
-avaを含めると15MBを超えるので、devDependenciesのmoduleを一度削除します。
+で作成します。
 
 ## cron expression
 
